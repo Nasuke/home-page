@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<title>神奇的程序员</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style-404.css" />
+<link rel="stylesheet" href="css/style.css">
+<style>
+	/*包含以下五种的链接*/
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	/*正常的未被访问过的链接*/
+	a:link {
+		text-decoration: none;
+	}
+	/*已经访问过的链接*/
+	a:visited {
+		text-decoration: none;
+		color: white;
+		opacity: .6;
+	}
+	/*鼠标划过(停留)的链接*/
+	a:hover {
+		text-decoration: none;
+		color: white;
+		opacity: .6;
+	}
+	/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+	a:active {
+		text-decoration: none;
+		color: white;
+		opacity: .6;
+	}
+	/* 获得焦点的时候 鼠标松开时显示的颜色*/
+	a:focus {
+		text-decoration: none;
+		color: white;
+		opacity: .6;
+	}
+</style>
+</head>
+<body>
+<div class="glitters">
+	<div class="glitter g1"></div>
+	<div class="glitter g2"></div>
+	<div class="glitter g3"></div>
+	<div class="glitter g4"></div>
+	<div class="glitter g5"></div>
+	<div class="glitter g6"></div>
+	<div class="glitter g7"></div>
+	<div class="glitter g8"></div>
+</div>
+
+<div class="wrapper">
+	<canvas id="cat" class="mona" width="600" height="400" style="position: absolute; z-index: 999;right: 0;"></canvas>
+	<div class="col-md-6 align-self-center" style="color: white;margin-top: 40px;overflow-y: auto;z-index: 999;height: 60%;">
+        <h1>Hello</h1>
+        <h2>我是神奇的程序员</h2>
+        <p>欢迎来访我的个人主页，下方链接（滑动查看）为我的开源项目地址以及我在其他平台的账户首页，欢迎各位感兴趣的开发者访问。</a>
+		</p>
+		<p style="display: flex;align-items: center;"><img style="width: 32px;margin-right: 5px;" src="./img/juejin.png"/><a href="https://juejin.cn/user/3984285870859614">神奇的程序员-掘金</a></p>
+		<p style="display: flex;align-items: center;"><img style="width: 32px;margin-right: 5px;" src="./img/wechat.png"/><a href="wechat.html">神奇的程序员K-公众号</a></p>
+		<p style="display: flex;align-items: center;"><img style="width: 32px;margin-right: 5px;" src="./img/message.png"/><a href="https://www.kaisir.cn/chat-system/index.html">chat-system 在线体验地址</a></p>
+		<p style="display: flex;align-items: center;"><img style="width: 32px;margin-right: 5px;" src="./img/github.png"/><a href="https://github.com/likaia/chat-system/">chat-system 项目地址</a></p>
+      </div>
+	<div class="container">
+		<div class="planet">
+			<div class="spaceship">
+				<div class="body">
+					<div class="partial left"></div>
+					<div class="partial right"></div>
+					<div class="wing left"></div>
+					<div class="wing right"></div>
+					<div class="wing center"></div>
+				</div>
+			</div>
+			<div class="crews"></div>
+			<div class="door back"><div class="entrance"></div></div>
+			<div class="bridge"></div>
+			
+		</div>
+	</div>
+</div>
+
+<script src='js/zdog-cat.dist.js'></script>
+<script src="js/script-cat.js"></script>
+
+<script type="text/javascript" src='js/scene.js'></script>
+<script type="text/javascript" src='js/shape.js'></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
