@@ -3,7 +3,7 @@
 
 线上地址：[www.kaisir.cn](https://www.kaisir.cn/)
 
-
+[![效果图](./img/result.png)](http://www.kaisir.cn/)
 ## 写在最后
 * 项目遵守 [MIT](https://choosealicense.com/licenses/mit/) 开源协议
 * 本项目仅用于学习使用，切勿用于商业用途，否则产生的法律后果与作者无关。
