@@ -95,9 +95,17 @@ WeChat: Baymax-kt. likaia has 48 repositories available. Follow their code on Gi
     const switchTheme = (isDark) => {
         if (isDark) {
             document.getElementsByTagName("html")[0].setAttribute("data-color-mode","dark");
+            window.onload = function () {
+                // 修改项目展示卡片主题
+                document.getElementById("projectCard").setAttribute("src","https://www.kaisir.cn/uploads/home-page/img/dark-chat-system.svg")
+            }
             return;
         }
         document.getElementsByTagName("html")[0].setAttribute("data-color-mode","light");
+        window.onload = function () {
+            // 修改项目展示卡片主题
+            document.getElementById("projectCard").setAttribute("src","https://www.kaisir.cn/uploads/home-page/img/light-chat-system.svg")
+        }
     }
     if (window.matchMedia) {
         const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -753,9 +761,9 @@ WeChat: Baymax-kt</textarea>
                                                     style="max-width:100%;"></a></code></p>
                                         <p><strong>我的开源项目:</strong></p>
                                         <p><a href="https://github.com/likaia/chat-system"><img
-                                                src="https://camo.githubusercontent.com/253e5a93eaac6072ba60712815ac8c7029137582f1d7fdaa514399de02a5c178/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f70696e2f3f757365726e616d653d6c696b616961267265706f3d636861742d73797374656d"
-                                                alt="Readme Card"
-                                                data-canonical-src="https://github-readme-stats.vercel.app/api/pin/?username=likaia&amp;repo=chat-system"
+                                                id="projectCard"
+                                                src="https://www.kaisir.cn/uploads/home-page/img/light-chat-system.svg"
+                                                alt="chat-system"
                                                 style="max-width:100%;"></a></p>
                                         <hr>
                                         <p>
