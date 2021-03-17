@@ -90,6 +90,22 @@ WeChat: Baymax-kt. likaia has 48 repositories available. Follow their code on Gi
 
 <body class="logged-in env-production page-responsive page-profile mine" style="word-wrap: break-word;">
 
+<script type="text/javascript">
+    // 切换主题
+    const switchTheme = (isDark) => {
+        if (isDark) {
+            document.getElementsByTagName("html")[0].setAttribute("data-color-mode","dark");
+            return;
+        }
+        document.getElementsByTagName("html")[0].setAttribute("data-color-mode","light");
+    }
+    if (window.matchMedia) {
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // 切换主题
+        switchTheme(isDark);
+    }
+</script>
+
 <div id="start-of-content" class="show-on-focus"></div>
 
 <div
